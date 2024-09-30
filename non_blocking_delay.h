@@ -37,16 +37,16 @@ extern DelayTimer * DT3_AdiA2bI2cInit;
 #define FSM_STOP()   fsm_state = 0; return;}
 
 #define NON_BLOCKING_DELAY_VOID(dt, ms)  do {  							\
-    if(non_blocking_delay(dt, ms) == 1) {                       								\
-        return;                                                 													\
-    }else{                                                           											\
-		non_blocking_delay_timer_reset(dt);                       							\
-	}																												\
+    if(non_blocking_delay(dt, ms) == 1) {                       				\
+        return;                                                 				\
+    }else{                                                           				\
+	non_blocking_delay_timer_reset(dt);		                       			\
+    }												\
 } while(0)
 
 
 #define NON_BLOCKING_RESET_VOID(dt)  do {                 					\
-    non_blocking_delay_timer_reset(dt);                       								\
+    non_blocking_delay_timer_reset(dt);                       					\
 } while(0)
 
 void non_blocking_delay_init(); 
