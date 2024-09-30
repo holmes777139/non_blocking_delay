@@ -22,7 +22,7 @@ typedef struct __DelayTimerCtrl{
 
 extern DelayTimerCtrl non_blocking_delay_dtc;
 
-//?????
+//移植时去除 开始
 extern DelayTimer * DT0_AdiA2bI2cInit;
 extern DelayTimer * DT1_AdiA2bI2cInit;
 extern DelayTimer * DT2_AdiA2bI2cInit;
