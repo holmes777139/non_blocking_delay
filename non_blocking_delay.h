@@ -49,8 +49,8 @@ extern DelayTimer * DT3_AdiA2bI2cInit;
     non_blocking_delay_timer_reset(dt);                       					\
 } while(0)
 
-void non_blocking_delay_init(); 
-void non_blocking_delay_timers_service(DelayTimerCtrl *dtc);
+void non_blocking_delay_init(); //while(1)前调用
+void non_blocking_delay_timers_service(DelayTimerCtrl *dtc);//1毫秒的定时器服务中调用
 DelayTimer* non_blocking_delay_timer_register(DelayTimerCtrl *dtc);
 int non_blocking_delay(DelayTimer* dt, uint32_t delay_time);
 void non_blocking_delay_timer_reset(DelayTimer* dt);
