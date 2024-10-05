@@ -2,7 +2,8 @@
 #define _NON_BLOCKING_DELAY_H_
 
 #include <stdio.h>
-#include "r_cg_macrodriver.h"
+//#include "r_cg_macrodriver.h"  /* Renesas MCU 系统中的类似stdint.h */
+#include <stdint.h>
 #define AUDIO_DT_MAX 32
 #define TIMER_FLAGS_DISABLE 0
 #define TIMER_FLAGS_ALLOC 	1
