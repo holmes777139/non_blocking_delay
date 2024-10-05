@@ -40,7 +40,7 @@ extern DelayTimer * DT3_AdiA2bI2cInit;
     if(non_blocking_delay(dt, ms) == 1) {                       				\
         return;                                                 				\
      }												\
-	non_blocking_delay_timer_reset(dt);		                       			\
+    non_blocking_delay_timer_reset(dt);		                       				\
 } while(0)
 
 
