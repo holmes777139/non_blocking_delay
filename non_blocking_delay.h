@@ -39,9 +39,8 @@ extern DelayTimer * DT3_AdiA2bI2cInit;
 #define NON_BLOCKING_DELAY_VOID(dt, ms)  do {  							\
     if(non_blocking_delay(dt, ms) == 1) {                       				\
         return;                                                 				\
-    }else{                                                           				\
+     }												\
 	non_blocking_delay_timer_reset(dt);		                       			\
-    }												\
 } while(0)
 
 
